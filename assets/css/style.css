@@ -1,5 +1,11 @@
+.body {
+  background-color: ;
+}
 .container {
   padding: 0% 2% 3% 2%;
+  font-family: 'Nanum Gothic', sans-serif;
+  position: relative;
+
 }
 
 .image {
@@ -8,7 +14,23 @@
   padding: 1px 2% 2% 2%; 
 }
 
-.brand-logo {
-  display: flex;
-  justify-content: space-between;
+#navbarrow {
+  /* display: flex;
+  justify-content: space-around; */
+  font-family: 'Amatic SC', cursive;
+  
+}
+
+/* .brand-logo {
+  float: right;
+} */
+.nav-wrapper {
+  height: 125% !important;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 7%;
 }
