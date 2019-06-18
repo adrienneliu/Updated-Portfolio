@@ -15,29 +15,41 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Nanum+Gothic&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="grey lighten-3">
     <nav>
         <div class="nav-wrapper blue lighten-3">
             <div class="row" id="navbarrow">
-            <a href="#" class="brand-logo">Adrienne Liu </a>
-    <!--come back to this next line-->
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+                <a href="#" class="brand-logo col l8 s6">Adrienne Liu </a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                    <i class="material-icons right">menu</i>
+
+                    <ul id="nav-mobile" class="right hide-on-med-and-down col l4 s5">
+
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </a>
+            </div>
         </div>
     </nav>
 
-    <div class="container deep-purple lighten-4">
-      <h1>About</h1>
-      <div class="divider"></div>
-      <br>
-        <img src="assets/images/Capture.PNG" class="image left" alt="an adrienne in new york">
+    <ul class="sidenav" id="mobile-nav">
+
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    <div class="container deep-purple lighten-4 col l6 m8 s8">
+        <h2>About</h2>
+        <div class="divider"></div>
+        <br>
+        <img src="assets/images/Capture.PNG" class="image left s5" alt="an adrienne in new york">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, rerum ipsum illo autem natus exercitationem
             odio explicabo eius, accusantium labore ut dignissimos dolor eveniet porro? Reprehenderit incidunt facere
             soluta repudiandae.</p>
@@ -67,16 +79,21 @@
 
 
 
-  
-        <div class="section blue lighten-3 white-text center" id="footer">
-                © 2014 Copyright Text
-        </div>
+
+    <div class="section blue lighten-3 white-text center" id="footer">
+        © Copyright
+    </div>
 
 
 
     <!--JavaScript at end of body for optimized loading-->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        //small nav menu bar, cases very important!
+        const sideNav = document.querySelector(".sidenav");
+        M.Sidenav.init(sideNav, {});
+        </script>
 </body>
 
 </html>
