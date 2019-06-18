@@ -41,16 +41,32 @@
 
     <ul class="sidenav" id="mobile-nav">
 
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
     <div class="container deep-purple lighten-4 col l6 m8 s8">
         <h2>Contact</h2>
         <div class="divider"></div>
         <br>
-        
+
+        <div class="card-panel deep-purple lighten-5 col s12 m6">
+            <div class="input-field">
+                <input type="text" placeholder="Name">
+            </div>
+
+            <div class="input-field">
+                <input type="text" placeholder="Email">
+            </div>
+
+            <div class="input-field">
+                <input type="text" placeholder="Message">
+            </div>
+            <input type="submit" value="Submit" class="btn purple lighten-2">
+
+        </div>
+
     </div>
 
 
@@ -71,7 +87,7 @@
         //small nav menu bar, cases very important!
         const sideNav = document.querySelector(".sidenav");
         M.Sidenav.init(sideNav, {});
-        </script>
+    </script>
 </body>
 
 </html>
