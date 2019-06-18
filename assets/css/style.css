@@ -5,6 +5,7 @@
   padding: 0% 2% 3% 2%;
   font-family: 'Nanum Gothic', sans-serif;
   position: relative;
+
   /* width: 55%; */
 
 }
@@ -32,9 +33,9 @@ padding-top: 2%;
   height: 125% !important;
 }
 
-.righty {
+/* .righty {
   font-size: 3.1rem !important;
-}
+} */
 #footer {
   position: absolute;
   bottom: 0%;
@@ -44,4 +45,17 @@ padding-top: 2%;
 
 li:hover {
   font-size: 20%;
+}
+
+.sidenav {
+ right: 0% !important;
+}
+
+#image {
+  width: 300px;
+}
+
+.card.sticky-action {
+  margin-right: 5%;
+  margin-left: 2%;
 }

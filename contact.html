@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Nanum+Gothic&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="grey lighten-3">
+    <nav>
+        <div class="nav-wrapper blue lighten-3">
+            <div class="row" id="navbarrow">
+                <a href="#" class="brand-logo col l8 s6">Adrienne Liu </a>
+
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                    <!-- still figuring how to move menu to the right at smallest size -->
+                    <i class="material-icons">menu</i>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down col l4 s5">
+                        <!-- font is tiny -->
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-nav">
+
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    <div class="container deep-purple lighten-4 col l6 m8 s8">
+        <h2>Contact</h2>
+        <div class="divider"></div>
+        <br>
+        
+    </div>
+
+
+
+
+
+
+    <div class="section blue lighten-3 white-text center" id="footer">
+        © Copyright
+    </div>
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        //small nav menu bar, cases very important!
+        const sideNav = document.querySelector(".sidenav");
+        M.Sidenav.init(sideNav, {});
+        </script>
+</body>
+
+</html>
